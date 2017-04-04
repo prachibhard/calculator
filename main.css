@@ -63,6 +63,47 @@ html, body {
     font-size: 16px;
 }
 
+form, h1 {
+    padding: 1em;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.femlist {
+    text-align: center;
+    padding: 5px;
+}
+
+.total {
+    border: 2px solid black;
+    text-align: justify;
+    width: 20%;
+    position: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.front {
+    text-align: center;
+    width: 20%;
+    /*float: left;*/
+    padding: 20px;
+    color: white;
+    background-color: darkred;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.back {
+    display: none;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 20%;
+    float: left;
+    padding: 20px;
+}
+
 
 /* Tablet/Desktop overrides */
 
