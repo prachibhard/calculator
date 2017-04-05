@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>HTML Skeleton</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Your styles should be called here -->
+        <link href="main.css" rel="stylesheet" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+    </head>
+
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <h1>
+          How much more do you spend on female-marketed products?
+        </h1>
+        <p class="femlist">
+            This is what your yearly total is if you purchased products marketed to females every month.
+        </p><br />
+        <div class="total">$842.16</div>
+
+        <br />
+        <p>
+            See how much to save using products marketed to males.
+        </p>
+
+        <form>
+            <div id="deodorant">
+                <div class="front" data-femPrice="7.16">
+                    Deodorant
+                </div>
+                <div class="back" data-malePrice="6.92">
+                    Deodorant
+                </div>
+            </div>
+            <div id="razors">
+                <div class="front" data-femPrice="16.26">
+                    Razors
+                </div>
+                <div class="back" data-malePrice="14.09">
+                    Razors
+                </div>
+            </div>
+
+            <div id="shampoo">
+                <div class="front" data-femPrice="12.31">
+                    Shampoo & Conditioner
+                </div>
+                <div class="back" data-malePrice="5.99">
+                    Shampoo & Conditioner
+                </div>
+            </div>
+            <div id="vitamins">
+                <div class="front" data-femPrice="18.44">
+                    Daily Vitamins
+                </div>
+                <div class="back" data-malePrice="16.06">
+                    Daily Vitamins
+                </div>
+            </div>
+            <div id="gel">
+                <div class="front" data-femPrice="16.99">
+                    Hair gel
+                </div>
+                <div class="back" data-malePrice="10.49">
+                    Hair gel
+                </div>
+            </div>
+
+            <div id="shaving">
+                <div class="front" data-femPrice="4.46">
+                    Shaving Gel
+                </div>
+                <div class="back" data-malePrice="4.36">
+                    Shaving Gel
+                </div>
+            </div>
+            <div id="bodywash">
+                <div class="front" data-femPrice="7.67">
+                    Body Wash
+                </div>
+                <div class="back" data-malePrice="5.66">
+                    Body Wash
+                </div>
+            </div>
+
+            <div id="spray">
+                <div class="front" data-femPrice="8.49">
+                    Body Spray
+                </div>
+                <div class="back" data-malePrice="7.26">
+                    Body Spray
+                </div>
+            </div>
+            <div id="hair">
+                <div class="front" data-femPrice="12.42">
+                    Hair Dye
+                </div>
+                <div class="back" data-malePrice="10.16">
+                    Hair Dye
+                </div>
+            </div>
+            <div id="blades">
+                <div class="front" data-femPrice="22.32">
+                    Refill Blades
+                </div>
+                <div class="back" data-malePrice="18.66">
+                    Refill Blades
+                </div>
+            </div>
+        </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <!-- Your javascript should be called here -->
+        <script src="main.js"></script>
+    </body>
+
+</html>
