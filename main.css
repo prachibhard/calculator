@@ -61,52 +61,67 @@ table {
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    margin: 20px;
+    background-color: #FFDEAD;
 }
 
-form, h1 {
+form {
+    margin: auto;
+    position: relative;
+}
+
+h1, h4 {
     padding: 1em;
-    max-width: 980px;
+    max-width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
-.femlist {
+h3 {
+    text-decoration: underline;
+}
+
+p {
+    padding: 1em;
+}
+
+.femlist, .text {
     text-align: center;
     padding: 5px;
 }
 
 .total {
-    border: 2px solid black;
-    text-align: justify;
-    width: 20%;
-    position: center;
-    margin: 0 auto;
+    border: 5px solid black;
+    text-align: center;
     padding: 10px;
+    width: 100%;
+    background-color: white;
 }
 
 .front {
     text-align: center;
-    width: 20%;
-    /*float: left;*/
+    width: 29%;
     padding: 20px;
-    color: white;
-    background-color: darkred;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    border: black;
+    border-style: solid;
+    float: left;
 }
 
 .back {
     display: none;
-    background-color: blue;
-    color: white;
     text-align: center;
-    width: 20%;
-    float: left;
+    width: 29%;
     padding: 20px;
+    margin: 10px;
+    border: black;
+    border-style: solid;
+    float: left;
 }
 
-p {
-    margin-bottom: 10px;
-    text-align: center;
+.methodology {
+    position: relative;
+    margin: auto;
 }
 
 
