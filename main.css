@@ -98,30 +98,58 @@ p {
     background-color: white;
 }
 
-.front {
+.item .front, .item .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s transform ease-in-out;
+    backface-visibility: hidden;
     text-align: center;
-    width: 29%;
     padding: 20px;
     margin: 10px;
     border: black;
     border-style: solid;
-    float: left;
+    box-sizing: border-box;
 }
 
-.back {
-    display: none;
-    text-align: center;
-    width: 29%;
-    padding: 20px;
-    margin: 10px;
-    border: black;
-    border-style: solid;
+.item .back {
+    transform: rotateY(-180deg);
+}
+
+.item {
+    position: relative;
     float: left;
+    width: 29%;
+    padding-bottom: 29%;
+}
+
+.item.active {
+    transform: rotateY(180deg) scaleX(-1);
+}
+
+.item.active .front {
+    transform: rotateY(-180deg);
+}
+
+.item.active .back {
+    transform: rotateY(0deg);
 }
 
 .methodology {
     position: relative;
     margin: auto;
+}
+
+.save {
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    background-color: white;
 }
 
 

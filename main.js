@@ -1,13 +1,32 @@
+var femAnnualTotal = 842.16;
 $(document).ready(function () {
-			var sum = 0;
+	$(".item").on("click", function (e) {
+		var item = $(this);
+		var femTotal = femAnnualTotal;
 
-			$(".front").each(function () {
-					sum = sum + parseFloat
-				}
+		if (item.hasClass("active")) {
+			item.removeClass("active");
+		} else {
+			item.addClass("active");
+		}
 
-				$(".front").on("click", function (e) {
-					e.preventDefault();
+		var savings = 0;
+
+		$(".item.active").each(function () {
+			var item = $(this);
+			var value = parseFloat(item.data("savings"));
 
 
-				});
-			});
+			savings = savings + value;
+		});
+
+		var savings = (femTotal - savings).toFixed(2);
+
+		$(".total").text("$" + savings);
+
+
+		$(".save").text(femTotal - savings).toFixed(2);
+
+
+	});
+});
