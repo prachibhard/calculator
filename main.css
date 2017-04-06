@@ -104,6 +104,11 @@ form, h1 {
     padding: 20px;
 }
 
+p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 
 /* Tablet/Desktop overrides */
 
