@@ -28,12 +28,17 @@ $(document).ready(function () {
 			savings = savings + value;
 		});
 
-		var savings = (femTotal - savings).toFixed(2);
+		savings = (femTotal - savings).toFixed(2);
 
 		$(".total").text("$" + savings);
 
+		$(".save").text("$" + (femTotal - savings).toFixed(2));
 
-		$(".save").text((femTotal - savings).toFixed(2));
+		$(".reset").on("click", function (e) {
+			e.preventDefault();
+
+			$(".item.active").click();
+		});
 
 
 	});
