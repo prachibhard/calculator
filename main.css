@@ -182,6 +182,10 @@ figure.icon img {
     padding-top: 10px;
 }
 
+figure.background_image img {
+    width: 100%;
+}
+
 
 /* Tablet/Desktop overrides */
 
