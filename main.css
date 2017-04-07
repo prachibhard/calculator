@@ -231,6 +231,18 @@ blockquote p {
 
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    h1 {
+        font-size: 2em;
+    }
+    .calccontainer {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .container {
+        display: block;
+        max-width: 968px;
+        margin: 0 auto;
+    }
 }
 
 @media(min-width: 729px) {
@@ -240,6 +252,10 @@ blockquote p {
 /
 }
 */
+}
+/
+}
+/
 }
 /
 }
