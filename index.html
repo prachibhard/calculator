@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- first step to a responsive site -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
         <title>HTML Skeleton</title>
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -24,13 +25,19 @@
 
     <body>
         <!-- YOUR CONTENT GOES HERE -->
-        <h1>
+        <header class="headline">
+            <h1>
           How much more do you spend on products marketed for women?
-        </h1>
+        </h1> </header>
         <p class="femlist">
             This is what your yearly total is if you purchased products marketed to females every month.
         </p><br />
-        <div class="total">$1518.36</div>
+        <div class="total">
+            <h3>Total Yearly Purchase</h3>
+            <p class="pmoney">
+
+                $1518.36</p>
+        </div>
 
         <br />
         <p>
@@ -169,7 +176,7 @@
             Check out how much you can save per year when you buy products for males.
         </p>
 
-        <span class="save">$0.00</span>
+        <span class="save"><h3>Total Savings</h3><p class="smoney">$0.00</p></span>
 
         <input type="button" class="reset" value="Start Over" />
 

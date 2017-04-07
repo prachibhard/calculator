@@ -30,9 +30,9 @@ $(document).ready(function () {
 
 		savings = (femTotal - savings).toFixed(2);
 
-		$(".total").text("$" + savings);
+		$(".pmoney").text("$" + savings);
 
-		$(".save").text("$" + (femTotal - savings).toFixed(2));
+		$(".smoney").text("$" + (femTotal - savings).toFixed(2));
 
 		$(".reset").on("click", function (e) {
 			e.preventDefault();
