@@ -98,30 +98,63 @@ p {
     background-color: white;
 }
 
-.front {
+.item .front, .item .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transition: .5s transform ease-in-out;
+    backface-visibility: hidden;
     text-align: center;
-    width: 29%;
     padding: 20px;
     margin: 10px;
     border: black;
     border-style: solid;
-    float: left;
+    box-sizing: border-box;
 }
 
-.back {
-    display: none;
-    text-align: center;
-    width: 29%;
-    padding: 20px;
-    margin: 10px;
-    border: black;
-    border-style: solid;
+.item .back {
+    transform: rotateY(-180deg);
+}
+
+.item {
+    position: relative;
     float: left;
+    width: 50%;
+    padding-bottom: 20%;
+}
+
+.item.active {
+    transform: rotateY(180deg) scaleX(-1);
+}
+
+.item.active .front {
+    transform: rotateY(-180deg);
+}
+
+.item.active .back {
+    transform: rotateY(0deg);
 }
 
 .methodology {
     position: relative;
     margin: auto;
+}
+
+.save {
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 80px;
+    float: left;
+    width: 100%;
+    background-color: white;
+}
+
+.down {
+    position: absolute;
+    margin-top: 85%;
 }
 
 
@@ -133,4 +166,7 @@ p {
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+/
 }
