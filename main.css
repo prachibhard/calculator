@@ -65,9 +65,9 @@ html, body {
     background-color: #fff;
 }
 
-form {
-    margin: auto;
-    position: relative;
+img {
+    width: 100%;
+    margin: 0 auto;
 }
 
 h1, h4 {
@@ -84,9 +84,10 @@ h3 {
 }
 
 p {
-    padding: 1em;
+    padding: 10px;
     font-size: 1.2em;
     font-family: 'Source Serif Pro', serif;
+    line-height: 1.2;
 }
 
 p.pmoney, p.smoney {
@@ -154,6 +155,7 @@ p.pmoney, p.smoney {
 .methodology {
     position: relative;
     margin: auto;
+    font-size: .8em;
 }
 
 .save {
@@ -164,7 +166,7 @@ p.pmoney, p.smoney {
     background-color: white;
     display: block;
     left: 0;
-    bottom: 0;
+    top: 0;
     position: sticky;
     z-index: 1020;
 }
@@ -172,9 +174,11 @@ p.pmoney, p.smoney {
 .reset {
     left: 0;
     bottom: 0;
-    position: sticky;
     z-index: 1020;
     font-size: 1em;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
 }
 
 figure.icon img {
@@ -182,8 +186,44 @@ figure.icon img {
     padding-top: 10px;
 }
 
-figure.background_image img {
-    width: 100%;
+#items {
+    font-family: 'Cabin', sans-serif;
+}
+
+a {
+    color: #3c69b2;
+    text-decoration: none;
+}
+
+blockquote {
+    border-left: 10px solid #3c69b2;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201C""\201C""\201C";
+    font-size: 22px;
+}
+
+p.name {
+    font-size: 18px;
+}
+
+
+/*styles the quotation I put before my quote*/
+
+blockquote:before {
+    color: #8c041d;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+
+/*the text in my block will be inside the element*/
+
+blockquote p {
+    display: inline;
 }
 
 
