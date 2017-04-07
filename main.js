@@ -1,4 +1,4 @@
-var femAnnualTotal = 842.16;
+var femAnnualTotal = 1518.36;
 $(document).ready(function () {
 	// var $window = $(window),
 	// 	$stickyEl = $(".total"),
