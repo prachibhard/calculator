@@ -102,8 +102,8 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     transition: .5s transform ease-in-out;
     backface-visibility: hidden;
     text-align: center;
@@ -121,8 +121,8 @@ p {
 .item {
     position: relative;
     float: left;
-    width: 29%;
-    padding-bottom: 29%;
+    width: 50%;
+    padding-bottom: 20%;
 }
 
 .item.active {
@@ -146,10 +146,15 @@ p {
     border: 5px solid black;
     text-align: center;
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 80px;
     float: left;
     width: 100%;
     background-color: white;
+}
+
+.down {
+    position: absolute;
+    margin-top: 85%;
 }
 
 
@@ -161,4 +166,7 @@ p {
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+/
 }
