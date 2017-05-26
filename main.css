@@ -109,7 +109,7 @@ p.pmoney, p.smoney {
     left: 0;
     top: 0;
     position: sticky;
-    z-index: 1020;
+    z-index: 1000;
 }
 
 .item .front, .item .back {
@@ -155,11 +155,15 @@ p.pmoney, p.smoney {
 .methodology {
     position: relative;
     margin: auto;
-    font-size: .8em;
+    font-size: .9em;
+    background-color: #eee;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .save {
-    border: 4px solid #4c4b4b;
+    /*border: 4px solid #4c4b4b;*/
     text-align: center;
     /*padding: 10px;*/
     width: 100%;
@@ -167,8 +171,18 @@ p.pmoney, p.smoney {
     display: block;
     left: 0;
     top: 0;
-    position: sticky;
+    position: sticky absolute;
     z-index: 1020;
+}
+
+.intro {
+    background-color: #eee;
+    color: #8c041d;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .reset {
@@ -176,9 +190,10 @@ p.pmoney, p.smoney {
     bottom: 0;
     z-index: 1020;
     font-size: 1em;
-    color: #000;
+    color: #3c69b2;
     font-weight: bold;
     font-family: 'Cabin', sans-serif;
+    background-color: #e8eaed;
 }
 
 figure.icon img {
